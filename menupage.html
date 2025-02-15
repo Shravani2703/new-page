@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+</head>
+<style>
+    .filter-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color:skyblue;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    
+    margin-left: 180px;
+    
+}
+.filter-buttons button:hover {
+    background-color:rgb(0, 162, 255);
+    
+}
+
+</style>
+<body>
+    <header>
+   <h1 style="text-align: center;font-size: 80px;background-color:blanchedalmond;color:orangered;">Menu</h1>
+</header>
+
+<div class="filter-buttons">
+    <div class="filter-buttons">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('appetizers')">Appetizers</button>
+        <button onclick="filterMenu('main_courses')">Main Course</button>
+        <button onclick="filterMenu('desserts')">Desserts</button>
+
+</div>
+</div>
+
+<div class="menu" id="menu">
+    <div class="Appetizer" data-category="Appetizers">
+    <!-- Appetizers -->
+    <div>
+         <div style="text-align:center;display: flex;width :800 px;margin:auto ;margin-top: 30px;">
+            
+            <div class="menu-item appetizer" data-category="appetizers";
+            style="width:250px;margin: auto;box-shadow:grey 0px 7px 29px 0px;">
+        <img style="width: 200px;
+        " src="https://www.thecookingcollective.com.au/wp-content/uploads/2022/08/Vegetable-Spring-Rolls-2-1-500x500.jpg"alt="">
+        <h4 style="text-align: center;">Vegetable Spring Roll</h4>
+        <p style=" text-align:center;">These are crisp spring rolls filled with lightly seasoned crunchy vegetables</p>
+        <h3>Rs.100</h3>
+        <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+           </div>
+
+    <div class="menu-item appetizer" data-category="appetizers";
+    style="width:250px;margin: auto;box-shadow:grey 0px 7px 29px 0px;">
+        <img style="width: 180px;
+        " src="https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-Featured-1.jpg"alt="">
+        <h4 style="text-align: center;">Tandoori Paneer Bites</h4>
+        <p style=" text-align:center;">Marinated Indian Cottage Cheese (Paneer) tenderized in sauce of yogurt, lemon juice, along with a blend of Indian spices.</p>
+        <h3>Rs.180</h3>
+        
+        <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+    </div>
+
+    <div class="menu-item appetizer" data-category="appetizers";
+     style="width:250px;margin: auto;box-shadow: grey 0px 7px 29px 0px;">
+        <img style="width: 200px;
+        " src="https://5.imimg.com/data5/EW/KZ/PT/SELLER-90199512/veg-cheese-corn-nuggets.jpg"alt="">
+        <h4 style="text-align: center;">Cheese Corn Nuggets</h4>
+        <p style=" text-align:center;">A delicious snack made of cheese and corn, crispy on the outside, tender and cheesy on the inside. </p>
+        <h3>Rs.150</h3>
+        <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+    </div>
+
+    <div class="menu-item appetizer" data-category="appetizers";
+    style="width:250px;margin: auto;box-shadow: grey 0px 7px 29px 0px;">
+        <img style="width: 200px;
+        " src="https://natashaskitchen.com/wp-content/uploads/2023/12/stuffed-mushrooms-sq.jpg"alt="">
+        <h4 style="text-align: center;">Stuffed Mushrooms</h4>
+        <p style=" text-align:center;">Baked mushrooms stuffed with a mixture of chopped mushroom stalks, herbs and cheese.</p>
+        <h3>Rs.200</h3>
+        <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+    <div class="menu" id="menu">
+        <div class="menu-item main_course" data-category="main_courses">
+    <!-- Main Courses -->
+
+    <div>
+        <div>
+            <h3 style="text-align: center;margin-top: 30px;font-size: 30px;">Main Course</h3>
+            </div>
+        <div style="text-align:center;display: flex;width :800 px;margin:auto ;margin-top: 40px;">
+           
+            <div style="width:250px;
+            ;margin: auto;box-shadow: black 0px 7px 29px 0px;">
+        <img style="width: 200px;
+        " src="https://static.toiimg.com/photo/52446409.cms"alt="">
+        <h4 style="text-align: center;">Shahi Paneer</h4>
+        <p style=" text-align:center;">A vegetarian Mughlai curry where paneer is cooked in a creamy sauce made with onions, yogurt, nuts and seeds</p>
+        <h3>Rs.280</h3>
+        
+        <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+    </div>
+
+    <div style="width:250px;
+    ;margin: auto;box-shadow: black 0px 7px 29px 0px;">
+<img style="width: 200px;
+" src="https://carveyourcraving.com/wp-content/uploads/2021/09/Best-Malai-Kofta-recipe.jpg"alt="">
+<h4 style="text-align: center;">Malai Kofta</h4>
+<p style=" text-align:center;">Malai Kofta is a delicious dish of fried balls of potato and paneer in a rich and creamy mild gravy made with sweet onions and tomatoes.</p>
+<h3>Rs.280</h3>
+
+<button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+</div>
+
+<div style="width:250px;
+;margin: auto;box-shadow: black 0px 7px 29px 0px;">
+<img style="width: 200px;
+" src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg"alt="">
+<h4 style="text-align: center;">Dal Makhni</h4>
+
+
+<p style=" text-align:center;"> A popular North Indian dish where whole black lentils & kidney beans are slow cooked with spices, butter & cream.</p>
+    <h3>Rs.280</h3>
+
+<button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="menu-item dessert" data-category="desserts">
+
+<div>
+    <div>
+        <h3 style="text-align: center;margin-top: 30px;font-size: 30px;">Desserts</h3>
+        </div>
+        
+    <div style="text-align:center;display: flex;width :800 px;margin:auto ;margin-top: 40px;">
+
+        <div class="menu-item dessert" data-category="desserts";
+        style="width:250px; margin: auto;box-shadow: black 0px 7px 29px 0px;">
+         <img style="width: 200px;
+          " src="https://bkmedia.bakingo.com/tasty-chocolate-truffle-past0162choc-AAA_0.jpg"alt="">
+           <h4 style="text-align: center;">Chocolate Truffle Pastry</h4>
+           <p style=" text-align:center;">This is a dense moist chocolate cake with silky chocolate ganache frosting with chocolate shavings on top.</p>
+            <h3>Rs.120</h3>
+
+            <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+       </div>
+
+<div class="menu-item dessert" data-category="desserts";
+style="width:250px;
+;margin: auto;box-shadow: black 0px 7px 29px 0px;">
+<img style="width: 200px;
+" src="https://www.thecountrycook.net/wp-content/uploads/2022/05/thumbnail-No-Churn-Strawberry-Ice-Cream.jpg"alt="">
+<h4 style="text-align: center;">Strawberry Ice-Cream</h4>
+<p style=" text-align:center;"> A frozen dessert with a sweet, fruity flavor made up of strawberries having pink or light red color</p>
+<h3>Rs.80</h3>
+
+<button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+</div>
+
+<div class="menu-item dessert" data-category="desserts";
+style="width:250px; margin: auto;box-shadow: black 0px 7px 29px 0px;">
+ <img style="width: 200px;
+  " src="https://www.rainbownourishments.com/wp-content/uploads/2023/02/vegan-red-velvet-cupcakes-1.jpg"alt="">
+   <h4 style="text-align: center;">Red Velvet Cupcake</h4>
+   <p style=" text-align:center;">Classic red velvet Cupcake with a vanilla cream cheese frosting.</p>
+    <h3>Rs.140</h3>
+    <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+</div>
+
+<div class="menu-item dessert" data-category="desserts";
+style="width:250px; margin: auto;box-shadow: black 0px 7px 29px 0px;">
+ <img style="width: 200px;
+  " src="https://images.stockcake.com/public/f/4/d/f4dfda7e-faa6-46b6-bc37-19af4a81bc4e_large/delicious-ice-cream-stockcake.jpg"alt="">
+   <h4 style="text-align: center;">Triple Scoop</h4>
+   <p style=" text-align:center;">Three variety of flavours in a single cone.</p>
+    <h3>Rs.200</h3>
+    <button style="margin: auto;display: block;background-color:darkorange;color:aliceblue;">Order now</button>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<script>
+function filterMenu(category) {
+    const items = document.querySelectorAll('.menu-item');
+    items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+
+</script>
+</body>
+</html>

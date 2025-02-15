@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    
+</head>
+<body>
+    <div class="top">
+        <div class="logo">Eat Out</div>
+        <div class="nav">
+            <a href="#" onclick="showSection('Home')">Home</a>
+            <a href="#" onclick="showSection('Menu')">Menu</a>
+            <a href="#" onclick="showSection('About')">About</a>
+            <a href="#" onclick="showSection('Location')">Location</a>
+            <a href="#" onclick="showSection('Contact')">Contact</a>
+        </div>
+        <div>
+            <input type="text" id="search" placeholder="Search🔍">
+        </div>
+    </div>
+    
+    <div class="content" id="content">
+        <div id="Home">
+            <h3 style="color: darkorange;font-size: 35px;margin-top: 70px;">Welcome to Eat Out</h3>
+            <h1 style="color: white;font-size: 70px;margin-top: 20px;">Eat Happy <br>Stay Happy</h1>
+            <h3 style="color: darkorange;font-size: 30px;margin-top: 20px;font-style: italic;">You Crave We Serve</h3>
+        </div>
+        <div id="Menu" style="display: none;">
+            <h1 style="color: white;font-size: 50px;margin-top: 140px;">Our Menu</h1>
+            <p style="color: darkorange;margin-top: 15px;font-size: 20px;font-style: italic;">Explore our variety of dishes such as <br> pasta, pizzas, desserts, and more!</p>
+        </div>
+        <div id="About" style="display: none;">
+            <h1 style="color: white;font-size: 50px;margin-top: 140px;">About Us</h1>
+            <p style="color: darkorange;margin-top: 15px;font-size: 20px;font-style: italic;">We are a family restaurant dedicated to serving <br>the fresh and most delicious food.</p>
+        </div>
+        <div id="Location" style="display: none;">
+            <h1 style="color: white;font-size: 50px;margin-top: 140px;">Our Location</h1>
+            <p style="color: darkorange;margin-top: 15px;font-size: 20px;font-style: italic;">We are located in the heart of the city,easily accessible and welcoming to all!
+                <br>|Address: Eat Out Restaurant,FC Rd,Pune,Maharashtra|</p>
+        </div>
+        <div id="Contact" style="display: none;">
+            <h1 style="color: white;font-size: 50px;margin-top: 140px;">Contact Us</h1>
+            <p style="color: darkorange;margin-top: 15px;font-size: 20px;font-style: italic;">|Email: contact@eatout.com | 
+                <br>|Phone: 123-456-7890|</p>
+        </div>
+    </div>
+    <a href="MenuPage.html" style="margin-left: 1300px;margin-bottom: 20px;color: white;">next➡</a>
+
+    <script>
+        function showSection(section) {
+            const sections = ['Home', 'Menu', 'About', 'Location', 'Contact'];
+            sections.forEach(sec => {
+                document.getElementById(sec).style.display = sec === section ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
